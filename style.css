@@ -1,0 +1,344 @@
+/* =============================================
+                Basic CSS Style 
+================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Open+Sans:wght@300;400;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+*{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'Open Sans','Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F7F9F8;
+    color: #212025;
+    font-size: 16px;
+}
+
+h1,h2{
+    font-size: 3.4rem;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+p{
+    color: #575757;
+    line-height: 1.7;
+}
+a,button{
+    font-family: 'Fira Sans','Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #212025;
+    text-transform: capitalize;
+}
+
+  /* Use all button style  */
+
+.nav-btn{
+    padding: .5rem 1.5rem;
+    background: linear-gradient(to right,#FDC830,#f37335);
+    color: white;
+    border-radius: 3.1rem;
+} 
+
+    /* Use for half with of container */
+
+.half-width{
+    width: 40%;
+    margin-left: 5%;
+    padding: 3%;
+}
+/* ========================================
+    Header Section Start Here 
+=========================================== */
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+}
+.logo{
+    margin-top: 0.6rem;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0 1.2rem;
+}
+.nav-links li a{
+    color: #212025;
+}
+/* =============================
+    Start Home Section
+================================ */
+
+#home{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+#home .half-width img{
+    width: 100%;
+    height: auto;
+}
+#home .top-margin{
+    margin-top: 6rem;
+}
+.discover-taste{
+    color: rgb(255, 115, 1);
+}
+.top-margin p{
+    padding-bottom: 0.8rem;
+    
+}
+
+
+/* ==========================
+    Start About Section
+============================= */
+
+#about{
+    width: 100%;
+    height:35rem;
+    background: url(images/7.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    padding: 3rem 0 0 0;
+}
+#about .half-width p{
+    padding-bottom: 0.8rem;
+}
+
+
+/* ===============================
+    Start Recipies Section 
+==================================*/
+
+#recipie .title-recipie{
+    text-align: center;
+}
+#recipie .recipie-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+#recipie p{
+    color: #575757;
+    padding-bottom: .8rem;
+}
+
+.recipie-list .recipie{
+    width: 32%;
+    margin: 2% 5%;
+    padding: 1.2rem;
+    box-shadow: 0 .2rem .4rem black, inset 0 .4rem white;
+    border-radius: 1.2rem;
+    text-align: center;
+}
+.recipie-list .recipie-2{
+    margin: 2% 0%;
+}
+.recipie-list img{
+    width: 100%;
+    height: auto;
+}
+.recipie span, a{
+    color: rgb(219, 99, 0);
+}
+.recipie a{
+    text-decoration: underline;
+}
+
+
+/* ==========================
+    Menu Section
+============================= */
+
+#menu{
+    background: white;
+    padding: 3rem 0 3rem 0;
+}
+#menu span{
+    display: block;
+    text-align: center;
+}
+#menu h2{
+    text-align: center;
+}
+#menu .menu-list{
+    display: flex;
+    justify-content: space-around;
+}
+.menu-list img{
+    width: 100%;
+    height: auto;
+}
+.menu-list .menu-width{
+    background:  #FFF5F2 ;
+    width: 32%;
+    margin: 2% 5%;
+    padding: 1.2rem;
+    box-shadow: 0 .2rem .4rem black, inset 0 .4rem white;
+    border-radius: 1.2rem;
+    text-align: center;
+}
+.menu-list .menu-width-2{
+    margin: 2% 0%;
+}
+
+.menu-list a{
+    margin: 2% 0;
+    display: block;
+}
+
+/* =====================
+    Start Service Section
+======================== */
+
+#service-section{
+    padding: 3rem 0 0 0 ;
+    background: url(images/service-bg.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+}
+#service-section img{
+    width: 100%;
+    height: auto;
+}
+.service-width{
+    margin-top: 3rem;
+}
+.service-width p{
+    padding-bottom: 0.8rem;
+}
+
+/* =========================
+    Social Section
+============================ */
+
+#social-section{
+    padding: 6rem 0;
+    background: #F7F9F8;
+}
+#social-section .container-social{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;  
+    align-items: center;  
+}
+.container-social{
+    width: 80%;
+    height: 12rem;
+    margin: 0 auto;
+    box-shadow: 0 .2rem .4rem black, inset 0 .4rem white;
+    border-radius: 1.5rem;
+}
+.container-social h2{
+    margin: 0;
+    color: rgb(255, 115, 1);
+}
+
+/* ======================
+    Footer Section 
+=========================*/
+
+#contact{
+    background: #333;
+    color: white;
+}
+#contact .contact-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-flex .footer-social{
+    width: 40%;
+    margin: 3rem 0 0 9rem;
+    
+}
+.contact-flex .form-width{
+    width: 60%;
+    margin: 3rem 5% 0 0;
+}
+
+#contact h2{
+    text-align: center;
+    padding: 3.5rem 0 0 0 ;
+}
+#contact h2 span{
+    color: rgb(255, 115, 1);
+}
+#contact h2{
+    padding-bottom: .3rem;
+    margin-bottom: 0;
+}
+#contact p{
+    margin-top: .8rem;
+    text-align: center;
+    color: white;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-item li{
+    display: block;
+    line-height: 2;
+
+}
+.nav-item li a{
+    text-decoration: underline;
+    color: white;
+    font-size: 1rem;
+}
+.form-group{
+    background: rgb(255, 253, 253);
+    padding: 2.2rem;
+    color: #333;
+    border-radius: 1.2rem;
+}
+.form-width h3{
+    font-size: 1.9rem;
+    font-weight: 500;
+    color:#333;
+    text-align: center;
+}
+.form-group .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: .8rem;
+}
+.form-group .inputBox input,
+.form-group .inputBox textarea{
+    width: 100%;
+    padding: .3rem 0;
+    font-size: 1rem ;
+    margin: .8rem 0;
+    border: none;
+    border-bottom: .1rem solid black;
+    outline: none;
+    resize: none;
+}
+.form-group .inputBox input[type="submit"]{
+    width: 9rem;
+    border: none;
+    color: #fff;
+    background: #00bcd4;
+    font-size: 1.1rem;
+    padding: .8rem;
+    border-radius: .8rem;
+}
+.footer-item{
+    text-align: center;
+    padding: 1.9rem 0 .3rem 0;
+}
